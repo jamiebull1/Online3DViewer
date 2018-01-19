@@ -29,7 +29,7 @@ ImporterApp.prototype.Init = function ()
 	var myThis = this;
 	var top = document.getElementById ('top');
 	var importerButtons = new ImporterButtons (top);
-	importerButtons.AddLogo ('Online 3D Viewer <span class="version">v 0.5</span>', function () { myThis.WelcomeDialog (); });
+	importerButtons.AddLogo ('Geomeppy 3D Viewer <span class="version">v 0.5</span>', function () { myThis.WelcomeDialog (); });
 	importerButtons.AddButton ('images/openfile.png', 'Open File', function () { myThis.OpenFile (); });
 	importerButtons.AddButton ('images/fitinwindow.png', 'Fit In Window', function () { myThis.FitInWindow (); });
 	importerButtons.AddButton ('images/fixup.png', 'Enable/Disable Fixed Up Vector', function () { myThis.SetFixUp (); });
@@ -89,9 +89,9 @@ ImporterApp.prototype.WelcomeDialog = function ()
 ImporterApp.prototype.GetWelcomeText = function ()
 {
 	var welcomeText = [
-		'<div class="welcometitle">Welcome to Online 3D Viewer!</div>',
+		'<div class="welcometitle">Welcome to Geomeppy 3D Viewer!</div>',
 		'<div class="welcometext">Here you can view your local 3D models online. You have three ways to open a file. Use the open button above to select files, simply drag and drop files to this browser window, or define the url of the files as location hash.</div>',
-		'<div class="welcometextformats">Supported formats: 3ds, obj, stl.</div>',
+		'<div class="welcometextformats">Supported formats: idf, 3ds, obj, stl.</div>',
 		'<div class="welcometext">Powered by <a target="_blank" href="https://github.com/mrdoob/three.js/">Three.js</a> and <a target="_blank" href="https://github.com/kovacsv/JSModeler">JSModeler</a>.</div>',
 		'<div class="welcometext"><a target="_blank" href="https://github.com/kovacsv/Online3DViewer"><img src="images/githublogo.png"/></a></div>',
 	].join ('');

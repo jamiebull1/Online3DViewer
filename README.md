@@ -1,9 +1,12 @@
-Online 3D Viewer
+Geomeppy 3D Viewer
 ================
 
-Online 3D Viewer is an engine to visualize 3D models online.
+Geomeppy 3D Viewer is an engine to visualize 3D EnergyPlus models online.
+
+It is a fork of Viktor Kovacs' brilliant [Online 3D Viewer](https://github.com/kovacsv/Online3DViewer), extended to accept EnergyPlus IDF files as input.
 
 Supported file formats:
+  - idf
   - 3ds (with textures)
   - obj, mtl (with textures)
   - stl (ascii and binary)
@@ -11,7 +14,6 @@ Supported file formats:
 Website
 -------
 
-This is the source code for http://3dviewer.net:
 - You can open 3D files in three ways:
   - Use the open button from the top menu.
   - Drag&Drop files to your browser.
